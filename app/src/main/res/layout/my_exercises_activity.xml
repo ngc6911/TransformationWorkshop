@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.regularpranksters.transformationworkshop.myexercises.MyExercisesActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_exercises"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_exercise"
+        android:layout_width="@dimen/fab_diameter"
+        android:layout_height="@dimen/fab_diameter"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_phone_margin"
+        android:layout_marginEnd="@dimen/fab_phone_margin"
+
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/rcv_exercises"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>
